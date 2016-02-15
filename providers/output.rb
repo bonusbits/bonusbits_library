@@ -1,3 +1,5 @@
+use_inline_resources
+
 action :display_output do
   ruby_block new_resource.name do
     block do
