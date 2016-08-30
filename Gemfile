@@ -1,29 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'coveralls', require: false
+gem 'rake'
+gem 'berkshelf', '>= 4.3'
 
 group :lint do
-  gem 'foodcritic', '~> 5.0'
-  gem 'rubocop', '~> 0.32'
-  gem 'rainbow', '~> 2.0'
+  gem 'foodcritic', '>= 7.0.1'
+  gem 'rubocop', '= 0.39.0'
+  gem 'rainbow', '>= 2.1'
 end
 
 group :unit do
-  gem 'berkshelf', '~> 3.0'
-  gem 'chefspec', '~> 4.0'
-  gem 'fauxhai', '~> 2.3'
-end
-
-group :integration do
-  gem 'serverspec', '~> 2.29'
-  gem 'kitchen-ec2', '~> 0.10'
-end
-
-group :development do
-  gem 'guard'
-  gem 'guard-kitchen'
-  gem 'guard-rspec'
-  gem 'guard-rubocop'
-  gem 'guard-foodcritic'
-  gem 'rake'
+  gem 'chefspec', '>= 4.7'
+  gem 'chef-sugar', '>= 3.4'
+  gem 'fauxhai', '>= 3.8'
+  gem 'coveralls', '>= 0.8.14'
 end

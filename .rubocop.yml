@@ -1,10 +1,13 @@
 AllCops:
   Exclude:
     - 'berks-cookbooks/**/*'
+    - '.idea/**/*'
+    - '.git/**/*'
     - '.kitchen/**/*'
+    - 'vendor/**/*'
 
 Metrics/LineLength:
-  Max: 200
+  Max: 120
 
 Metrics/MethodLength:
   Max: 60

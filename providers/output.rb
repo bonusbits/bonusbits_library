@@ -18,3 +18,16 @@ action :display_output do
   # Notify Observers
   new_resource.updated_by_last_action(true)
 end
+
+# Used to force Output When intended and not at start of converge
+action :action do
+  ruby_block new_resource.name do
+    block do
+      BonusBits::Output.action(new_resource.name)
+    end
+    action :run
+  end
+
+  # Notify Observers
+  new_resource.updated_by_last_action(true)
+end

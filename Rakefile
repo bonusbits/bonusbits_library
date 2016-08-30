@@ -1,24 +1,40 @@
-require 'rubocop/rake_task'
-require 'foodcritic'
+# For CircleCI
+require 'bundler/setup'
 
 # Style tests. Rubocop and Foodcritic
-namespace :style do
-  desc 'Run Rubocop'
-  RuboCop::RakeTask.new(:ruby)
+namespace :lint do
+  require 'rubocop/rake_task'
+  require 'foodcritic'
+  desc 'RuboCop'
+  RuboCop::RakeTask.new(:ruby) do |task|
+    task.options = %w(--except Metrics/LineLength,Metrics/MethodLength)
+  end
 
-  desc 'Run FoodCritic'
+  desc 'FoodCritic'
   FoodCritic::Rake::LintTask.new(:chef) do |task|
-    puts 'Running FoodCritic...'
     task.options = {
-      fail_tags: ['any']
+      fail_tags: ['correctness'],
+      chef_version: '12.13.37',
+      tags: %w(~FC001 ~FC019 ~FC016)
     }
   end
 end
 
-desc 'Run all lint checks'
-task style: %w(style:chef style:ruby)
+# Rspec and ChefSpec
+namespace :unit do
+  desc 'Unit Tests (Rspec & ChefSpec)'
+  require 'rspec/core/rake_task'
+  RSpec::Core::RakeTask.new(:rspec)
+end
 
-desc 'Run all checks and tests'
-task ci: %w(style)
+desc 'Travis CI Tasks'
+task travisci: %w(lint:chef lint:ruby)
 
-task default: :ci
+desc 'Circle CI Tasks'
+task circleci: %w(lint:chef lint:ruby)
+
+desc 'Lint Tasks <enter>'
+task lint: %w(lint:chef lint:ruby)
+
+desc 'Default Tasks - rake <enter>'
+task default: %w(lint:chef lint:ruby)
