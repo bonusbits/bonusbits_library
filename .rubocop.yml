@@ -4,10 +4,11 @@ AllCops:
     - '.idea/**/*'
     - '.git/**/*'
     - '.kitchen/**/*'
+    - '*.lock'
     - 'vendor/**/*'
 
 Metrics/LineLength:
-  Max: 120
+  Max: 200
 
 Metrics/MethodLength:
   Max: 60
