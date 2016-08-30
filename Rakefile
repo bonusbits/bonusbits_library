@@ -6,9 +6,7 @@ namespace :lint do
   require 'rubocop/rake_task'
   require 'foodcritic'
   desc 'RuboCop'
-  RuboCop::RakeTask.new(:ruby) do |task|
-    task.options = %w(--except Metrics/LineLength,Metrics/MethodLength)
-  end
+  RuboCop::RakeTask.new(:ruby)
 
   desc 'FoodCritic'
   FoodCritic::Rake::LintTask.new(:chef) do |task|
