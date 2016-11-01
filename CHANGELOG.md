@@ -1,6 +1,9 @@
 ##CHANGE LOG
 ---
 
+##1.0.4 - 11/01/2016 - Levon Becker
+* Renamed docker? method to container? in discovery library that I missed.
+
 ##1.0.3 - 10/31/2016 - Levon Becker
 * Renamed docker method to container because checking for docker or lxc
 
