@@ -1,6 +1,9 @@
 ##CHANGE LOG
 ---
 
+##1.0.3 - 10/31/2016 - Levon Becker
+* Renamed docker method to container because checking for docker or lxc
+
 ##1.0.2 - 08/30/2016 - Levon Becker
 * Added Docker Discovery Resource and Library
 * Added CircleCI Testing
