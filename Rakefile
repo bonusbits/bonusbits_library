@@ -2,7 +2,7 @@
 require 'bundler/setup'
 
 # Style tests. Rubocop and Foodcritic
-namespace :lint do
+namespace :style do
   require 'rubocop/rake_task'
   require 'foodcritic'
   desc 'RuboCop'
@@ -26,13 +26,10 @@ namespace :unit do
 end
 
 desc 'Travis CI Tasks'
-task travisci: %w(lint:chef lint:ruby)
+task travisci: %w(style:chef style:ruby)
 
 desc 'Circle CI Tasks'
-task circleci: %w(lint:chef lint:ruby)
-
-desc 'Lint Tasks <enter>'
-task lint: %w(lint:chef lint:ruby)
+task circleci: %w(style:chef style:ruby)
 
 desc 'Default Tasks - rake <enter>'
-task default: %w(lint:chef lint:ruby)
+task default: %w(style:chef style:ruby)
