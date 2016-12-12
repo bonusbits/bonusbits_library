@@ -1,6 +1,9 @@
 ##CHANGE LOG
 ---
 
+##1.0.6 - 12/12/2016 - Levon Becker
+* Added the rest of the useful meta data calls to teh AWS meta data library
+
 ##1.0.5 - 12/12/2016 - Levon Becker
 * Added AWS Library for calling Meta Data to get instance information
 
