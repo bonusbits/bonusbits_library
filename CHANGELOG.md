@@ -1,6 +1,9 @@
 ##CHANGE LOG
 ---
 
+##1.0.5 - 12/12/2016 - Levon Becker
+* Added AWS Library for calling Meta Data to get instance information
+
 ##1.0.4 - 11/01/2016 - Levon Becker
 * Renamed docker? method to container? in discovery library that I missed.
 
