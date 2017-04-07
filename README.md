@@ -1,5 +1,4 @@
 # Bonusbits Shared Libraries and Custom Resources Cookbook
-[![Build Status Master](https://travis-ci.org/bonusbits/bonusbits_library.svg?branch=master)](https://travis-ci.org/bonusbits/bonusbits_library)
 [![Circle CI](https://circleci.com/gh/bonusbits/bonusbits_library/tree/master.svg?style=shield)](https://circleci.com/gh/bonusbits/bonusbits_library/tree/master)
 
 Bonusbits Shared Ruby Libraries and Custom Resources Cookbook.
