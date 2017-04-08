@@ -8,6 +8,7 @@ module BonusBits
 
     def self.set_path_ownership(user, group, path, recursive = false)
       # TODO: Add Check Logic? Prior to setting ownership; check ownership and only change if needed?
+      # TODO: Work with Windows?
       require 'fileutils'
       if recursive
         FileUtils.chown_R user, group, path

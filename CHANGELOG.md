@@ -1,5 +1,8 @@
 ## CHANGE LOG
 
+## 1.0.8 - 04/08/2017 - Levon Becker
+* Added ecs? and aws? discovery aws? needs more work for ECS Container
+
 ## 1.0.7 - 04/07/2017 - Levon Becker
 * Improved Docker container discovery logic.
 * Switched to CircleCI 2.0 Native Docker Support!
