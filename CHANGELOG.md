@@ -1,5 +1,8 @@
 ## CHANGE LOG
 
+## 1.0.9 - 04/08/2017 - Levon Becker
+* Removed container? discovery. Ohai virtualization plugin used instead.
+
 ## 1.0.8 - 04/08/2017 - Levon Becker
 * Added ecs? and aws? discovery aws? needs more work for ECS Container
 
