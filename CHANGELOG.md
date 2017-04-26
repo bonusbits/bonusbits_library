@@ -1,5 +1,12 @@
 ## CHANGE LOG
 
+## 1.1.0 - 04/26/2017 - Levon Becker
+* Added shell out methods using open3 to dry up repeat code in cookbooks.
+* Updated Gem versions in Gemfile
+* Added supported OSs to metadata
+* Added Chef version to metadata
+* Added info output. Really need to test if Test Kitchen will output Info or still have to use warn
+
 ## 1.0.9 - 04/08/2017 - Levon Becker
 * Removed container? discovery. Ohai virtualization plugin used instead.
 

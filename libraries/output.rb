@@ -43,8 +43,12 @@ module BonusBits
       Chef::Log.warn("REPORT: #{message}")
     end
 
+    def self.info(message)
+      Chef::Log.warn("INFO: #{message}")
+    end
+
     def self.warn(message)
-      Chef::Log.warn("warn: #{message}")
+      Chef::Log.warn("WARN: #{message}")
     end
 
     def self.action(message)
