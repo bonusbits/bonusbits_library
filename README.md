@@ -1,5 +1,6 @@
 # Bonusbits Shared Libraries and Custom Resources Cookbook
 [![Circle CI](https://circleci.com/gh/bonusbits/bonusbits_library/tree/master.svg?style=shield)](https://circleci.com/gh/bonusbits/bonusbits_library/tree/master)
+[![Chef cookbook](https://img.shields.io/badge/cookbook-v1.1.0-blue.svg)](https://github.com/bonusbits/bonusbits_library)
 [![Join the chat at https://gitter.im/bonusbits](https://badges.gitter.im/bonusbits/bonusbits.svg)](https://gitter.im/bonusbits?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Bonusbits Shared Ruby Libraries and Custom Resources Cookbook.
