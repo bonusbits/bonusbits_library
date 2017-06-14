@@ -1,5 +1,9 @@
 ## CHANGE LOG
 
+## 1.1.1 - 06/14/2017 - Levon Becker
+* Added verbose to recursive ownership change call
+* Added cookbook version badge to readme
+
 ## 1.1.0 - 04/26/2017 - Levon Becker
 * Added shell out methods using open3 to dry up repeat code in cookbooks.
 * Updated Gem versions in Gemfile

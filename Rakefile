@@ -24,13 +24,13 @@ namespace :style do
     task.options = {
       fail_tags: ['correctness'],
       chef_version: '12.19.36',
-      tags: %w(~FC001 ~FC019 ~FC016 ~FC039)
+      tags: %w[~FC001 ~FC019 ~FC016 ~FC039]
     }
   end
 end
 
 desc 'Circle CI Tasks'
-task circleci: %w(style:chef style:ruby)
+task circleci: %w[style:chef style:ruby]
 
 desc 'Default Tasks - rake <enter>'
-task default: %w(style:chef style:ruby)
+task default: %w[style:chef style:ruby]

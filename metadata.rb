@@ -7,9 +7,9 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 chef_version '~> 12.1' if respond_to?(:chef_version)
 source_url 'https://github.com/bonusbits/bonusbits_library'
 issues_url 'https://github.com/bonusbits/bonusbits_library/issues'
-version '1.1.0'
+version '1.1.1'
 
-%w(
+%w[
   amazon
   debian
   ubuntu
@@ -18,6 +18,6 @@ version '1.1.0'
   suse
   opensuse
   windows
-).each do |os|
+].each do |os|
   supports os
 end

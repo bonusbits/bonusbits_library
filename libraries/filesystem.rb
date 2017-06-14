@@ -11,7 +11,7 @@ module BonusBits
       # TODO: Work with Windows?
       require 'fileutils'
       if recursive
-        FileUtils.chown_R user, group, path
+        FileUtils.chown_R user, group, path, verbose: true
         BonusBits::Output.report("Recursively Set (#{user}:#{group}) ownership for (#{path}/*)")
       else
         FileUtils.chown user, group, Dir.glob("#{path}/*")
