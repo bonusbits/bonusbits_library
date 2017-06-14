@@ -24,6 +24,9 @@ Style/SignalException:
 Style/EmptyLiteral:
   Enabled: false
 
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
 CyclomaticComplexity:
   Enabled: false
 
