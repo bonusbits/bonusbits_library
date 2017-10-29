@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rake', '~> 12.0'
+gem 'rake', '~> 10.5'
 
 group :style do
-  gem 'chef', '12.19.36'
+  gem 'chef', '12.21.4'
   gem 'foodcritic', '~> 10.2'
   gem 'rainbow', '~> 2.2.1'
   gem 'rubocop', '~> 0.47.1'
