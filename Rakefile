@@ -29,8 +29,8 @@ namespace :style do
   end
 end
 
-desc 'Circle CI Tasks'
-task circleci: %w(style:chef style:ruby)
+desc 'Style Tests'
+task style_tests: %w(style:chef style:ruby)
 
 desc 'Default Tasks - rake <enter>'
 task default: %w(style:chef style:ruby)
