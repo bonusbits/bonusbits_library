@@ -3,7 +3,7 @@ jobs:
   style_tests:
     working_directory: ~/circulate
     docker:
-      - image: circleci/ruby:2.3
+      - image: circleci/ruby:2.5.3
     steps:
       - checkout
       - run:
